@@ -1,0 +1,169 @@
+/* Additional reset */
+html {
+  font-size: initial;
+}
+
+body {
+  font-size: inherit;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  margin-top: 0;
+}
+
+a {
+  transition: color .2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+  .navbar-container {
+    width: 1170px;
+  }
+}
+
+.navbar {
+  margin-bottom: unset;
+  min-height: unset;
+  border-radius: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar::before,
+.navbar::after,
+.navbar-header::before,
+.navbar-header::after {
+  content: none;
+}
+
+.navbar-container > .navbar-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .navbar-container > .navbar-header {
+    width: auto;
+  }
+}
+
+.navbar-brand {
+  all: unset;
+  display: inline-block;
+}
+
+.navbar-toggle {
+  all: unset;
+  padding: 8px;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-toggle:not(.collapsed) .icon-bar {
+  background-color: #7f3c5c;
+}
+
+.navbar-collapse {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: none;
+  }
+
+  .navbar-nav > li {
+    float: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse.collapse {
+    display: block !important;
+  }
+
+  .navbar-nav > li {
+    display: inline-block;
+  }
+}
+
+.navbar-nav {
+  margin: 0 -15px;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: transparent;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 0;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.btn-lg {
+  padding: 8px 24px;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:active:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:hover {
+  background-color: #84385c;
+  color: #fff;
+  border-color: #84385c;
+}
